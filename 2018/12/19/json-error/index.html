@@ -113,7 +113,7 @@
 <meta property="og:description" content="后台查询数据向前端返回数据时报错：HTTP Status 500 - Could not write content** 1，原因：执行对应的sql发现有一个字段查出来时是null的，而封装到某个对象中时，并未给属性是否为null，检测，如果为null就赋予一个符合该属性类型的值，即可。123456if (!Objects.isNull(row[8])) &amp;#123;         tempOr">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/12421760-e20f46b0b21a7759.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-12-19T15:50:20.526Z">
+<meta property="og:updated_time" content="2018-12-20T08:46:04.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTTP Status 500 - Could not write content***">
 <meta name="twitter:description" content="后台查询数据向前端返回数据时报错：HTTP Status 500 - Could not write content** 1，原因：执行对应的sql发现有一个字段查出来时是null的，而封装到某个对象中时，并未给属性是否为null，检测，如果为null就赋予一个符合该属性类型的值，即可。123456if (!Objects.isNull(row[8])) &amp;#123;         tempOr">
@@ -380,16 +380,46 @@
                 
               
 
-              <time title="Created: 2018-12-19 23:48:48 / Modified: 23:50:20" itemprop="dateCreated datePublished" datetime="2018-12-19T23:48:48+08:00">2018-12-19</time>
+              <time title="Created: 2018-12-19 23:48:48" itemprop="dateCreated datePublished" datetime="2018-12-19T23:48:48+08:00">2018-12-19</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-20 16:46:04" itemprop="dateModified" datetime="2018-12-20T16:46:04+08:00">2018-12-20</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/SpringMVC/" itemprop="url" rel="index"><span itemprop="name">SpringMVC</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -442,7 +472,8 @@
 </blockquote>
 <h2 id="5，验证"><a href="#5，验证" class="headerlink" title="5，验证"></a>5，验证</h2><p>为了验证猜想：将getter的返回参数有int改为Integer（只更改getter返回值类型）<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Integer <span class="title">getTempOrderId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> tempOrderId;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTempOrderId</span><span class="params">(<span class="keyword">int</span> tempOrderId)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.tempOrderId = tempOrderId;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></p>
 <p>测试：<br>{<br>    “message”: “获取成功”,<br>    “data”: {<br>        “noticeId”: 164,<br>        “noticeNum”: “1545132031742”,<br>        “noticeTime”: 1545132031740,<br>        “noticeTypeCode”: “14010”,<br>        “noticeTypeName”: “订单中止审核”,<br>        “modifierId”: 272,<br>        “modifierName”: “张三”,<br>        “orderId”: 13,<br>        “tempOrderId”: null,//这个字段在作怪<br>        “orderNum”: “K1，0，501”,<br>        “clientId”: 11,<br>        “clientName”: “，，，，，测试”,<br>        “orderStatusCode”: “，，，”,<br>        “orderStatusName”: “，，，”,<br>        “modifyContent”: “，，，”,<br>        “remarks”: “设计主管处   同意终止订单1363”,<br>        “auditResultCode”: “1300”,<br>        “auditResultName”: “接单”<br>    },<br>    “success”: true<br>}</p>
-<p>至此问题解决！<br>包装类型-&gt;基本类型可能有问题<br>基本类型-&gt;包装类型，没问题<br>6## 总结：<br>数据库查询出的结果尽量使用包装类型，避免null造成的影响<br>运算的地方使用基本类型，减少对象的创建</p>
+<p>至此问题解决！<br>包装类型-&gt;基本类型可能有问题<br>基本类型-&gt;包装类型，没问题</p>
+<h2 id="6-总结："><a href="#6-总结：" class="headerlink" title="6 总结："></a>6 总结：</h2><p>数据库查询出的结果尽量使用包装类型，避免null造成的影响<br>运算的地方使用基本类型，减少对象的创建</p>
 
       
     </div>
@@ -576,7 +607,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -629,7 +662,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1，原因："><span class="nav-number">1.</span> <span class="nav-text">1，原因：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2，疑问"><span class="nav-number">2.</span> <span class="nav-text">2，疑问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-这条数据可是有10多个字段，难道每个字段去加if和else"><span class="nav-number">3.</span> <span class="nav-text">3,这条数据可是有10多个字段，难道每个字段去加if和else?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4，真实原因："><span class="nav-number">4.</span> <span class="nav-text">4，真实原因：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5，验证"><span class="nav-number">5.</span> <span class="nav-text">5，验证</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1，原因："><span class="nav-number">1.</span> <span class="nav-text">1，原因：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2，疑问"><span class="nav-number">2.</span> <span class="nav-text">2，疑问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-这条数据可是有10多个字段，难道每个字段去加if和else"><span class="nav-number">3.</span> <span class="nav-text">3,这条数据可是有10多个字段，难道每个字段去加if和else?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4，真实原因："><span class="nav-number">4.</span> <span class="nav-text">4，真实原因：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5，验证"><span class="nav-number">5.</span> <span class="nav-text">5，验证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-总结："><span class="nav-number">6.</span> <span class="nav-text">6 总结：</span></a></li></ol></div>
             
 
           </div>
