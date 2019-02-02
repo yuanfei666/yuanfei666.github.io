@@ -80,6 +80,12 @@
     <title><![CDATA[[原]hibernate select操作出现字段被截断错误]]></title>
     <url>%2F2019%2F01%2F02%2F%E5%8E%9F-hibernate-select%E6%93%8D%E4%BD%9C%E5%87%BA%E7%8E%B0%E5%AD%97%E6%AE%B5%E8%A2%AB%E6%88%AA%E6%96%AD%E9%94%99%E8%AF%AF%2F</url>
     <content type="text"><![CDATA[hibernate 使用面向对象的思想,将数据表抽象为类,数据记录抽象为对象,比较完美的减少了对sql的显式使用,用起来也是比较方便,通过操作对象就能增删改数据库记录.优点: 单表查询简单,crud完美移植到方法的调用,对开发人员sql的要求比较低缺点:多表查询比较麻烦,映射比较繁琐字段完全查出,性能有消耗这些优缺点只是个人理解. 接下来才是本文重点:主角登场–遇到的问… 作者：qq_36922927 发表于 2019/01/02 20:03:59 原文链接 https://blog.csdn.net/qq_36922927/article/details/85549273 阅读：47]]></content>
+      <categories>
+        <category>hibernate</category>
+      </categories>
+      <tags>
+        <tag>hibernate</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原](五) .net学习 Cache]]></title>
