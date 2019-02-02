@@ -52,6 +52,10 @@
     <title><![CDATA[[转]git常用操作]]></title>
     <url>%2F2019%2F01%2F20%2F%E8%BD%AC-git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[转载自博客:此博客主要是如何新建仓库,创建分支,切换分支,合并分支,删除分支demo:新建仓库:git init 可以将当前文件夹初始化为本地git仓库git 仓库默认有一个master分支但一般更改代码是在新起一个分支,比如叫做develop提交本地仓库到远程仓库 git remote add origin https://github.com/XXX(username)/YYY... 作者：qq_36922927 发表于 2019/01/20 16:44:17 原文链接 https://blog.csdn.net/qq_36922927/article/details/86563285 阅读：15]]></content>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]unity3d 官方demo入门概念]]></title>
