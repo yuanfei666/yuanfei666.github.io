@@ -66,6 +66,9 @@
     <title><![CDATA[[原]数据结构之查找]]></title>
     <url>%2F2019%2F01%2F15%2F%E5%8E%9F-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E6%9F%A5%E6%89%BE%2F</url>
     <content type="text"><![CDATA[常见查找算法顺序查找二分查找索引查找hash查找关键字:可能重复次关键字:唯一查找表:顺序查找:空间复杂度:o(1)时间复杂度:最好:o(1)最坏:o(n)平均:o(n)如果已知概率,可将大概率数据放在靠前,以减少平均查找长度折半查找:有序表:顺序表中的记录按照关键字值有序时间复杂度:log(n)以深度为h的满二叉树为例,即n=2h−1 n=2^h-1n=… 作者：qq_36922927 发表于 2019/01/15 16:03:45 原文链接 https://blog.csdn.net/qq_36922927/article/details/85942990 阅读：27]]></content>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]hibernate select操作出现字段被截断错误]]></title>
