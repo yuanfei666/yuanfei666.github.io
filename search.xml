@@ -12,11 +12,28 @@
     <title><![CDATA[[原]使用栈寻找迷宫通路]]></title>
     <url>%2F2019%2F01%2F28%2F%E5%8E%9F-%E4%BD%BF%E7%94%A8%E6%A0%88%E5%AF%BB%E6%89%BE%E8%BF%B7%E5%AE%AB%E9%80%9A%E8%B7%AF%2F</url>
     <content type="text"><![CDATA[问题描述:给定一个n*n的迷宫矩阵,障碍物记为1,无障碍记为0 int[][] map = new int[][]{{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},{1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1},{1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1},{1, 1, 1, 0, 0, 1, 1, 1, … 作者：qq_36922927 发表于 2019/01/28 11:24:10 原文链接 https://blog.csdn.net/qq_36922927/article/details/86672963 阅读：24]]></content>
+      <categories>
+        <category>算法</category>
+        <category>数据结构</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+        <tag>栈</tag>
+        <tag>递归</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]字符串匹配算法kmp]]></title>
     <url>%2F2019%2F01%2F26%2F%E5%8E%9F-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95kmp%2F</url>
     <content type="text"><![CDATA[问题:给定原串origin,求target 串在原串第一次出现的位置,若不存在,输出-1例如: origin:abcdeftarget:bc输出:1朴素算法最直观的思路(朴素算法): 取target的首元素与origin的首元素比较,如果相同,执行2两个字符相同,继续比较两个串的下一个元素如果出现元素不同3.1 如果上一个元素是匹配的(也就是当前比较的不是target串的首字符)… 作者：qq_36922927 发表于 2019/01/26 21:33:49 原文链接 https://blog.csdn.net/qq_36922927/article/details/86661194 阅读：37]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>kmp</tag>
+        <tag>字符串匹配</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]我的2018-2019]]></title>
@@ -32,6 +49,7 @@
       </categories>
       <tags>
         <tag>java基础</tag>
+        <tag>jdk</tag>
       </tags>
   </entry>
   <entry>
@@ -43,6 +61,13 @@
     <title><![CDATA[[原]全排列的打印]]></title>
     <url>%2F2019%2F01%2F25%2F%E5%8E%9F-%E5%85%A8%E6%8E%92%E5%88%97%E7%9A%84%E6%89%93%E5%8D%B0%2F</url>
     <content type="text"><![CDATA[题目:给定几个不重复数字,请输出全排列示例:1,2,3输出:1,2,31,3,22,1,32,3,13,2,13,1,2思考:给定的字符是1,2,3,…n全排列会允许任一字符能到达任一位置比如:1,2,3如果固定 1为第一个字符,则需要对 2,3 进行全排列如果固定 2为第一个字符,则需要对 1,3 进行全排列(为什么不是3,1被?这里是将1与2位置交换,方便思考,以免混乱… 作者：qq_36922927 发表于 2019/01/25 21:47:53 原文链接 https://blog.csdn.net/qq_36922927/article/details/86652314 阅读：21]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>递归</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原](二)设计模式之代理模式 ---aop]]></title>
@@ -53,14 +78,23 @@
     <title><![CDATA[[原](一)设计模式之策略模式]]></title>
     <url>%2F2019%2F01%2F24%2F%E5%8E%9F-%E4%B8%80-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[注:以jdk中的一角来理解设计模式的运用策略模式:在不同的情形下选取不同的方式去处理比如:jdk中的 java.util.Arrays.sort() 方法,则是根据待排序数组的初始的有序程度,以及规模来选取不同的排序方式处理排序具体实现是这个方法:策略1:对于小数组,直接使用&amp;amp;quot;快排&amp;amp;quot;策略2:对于不是高度结构化(各区间内有序)的数组,执行&amp;amp;quot;快排&amp;amp;quot;策略3:高度结构化的,使用归并排 作者：qq_36922927 发表于 2019/01/24 12:09:20 原文链接 https://blog.csdn.net/qq_36922927/article/details/86622952 阅读：19]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+        <tag>策略模式</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[转]git常用操作]]></title>
     <url>%2F2019%2F01%2F20%2F%E8%BD%AC-git%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[转载自博客:此博客主要是如何新建仓库,创建分支,切换分支,合并分支,删除分支demo:新建仓库:git init 可以将当前文件夹初始化为本地git仓库git 仓库默认有一个master分支但一般更改代码是在新起一个分支,比如叫做develop提交本地仓库到远程仓库 git remote add origin https://github.com/XXX(username)/YYY... 作者：qq_36922927 发表于 2019/01/20 16:44:17 原文链接 https://blog.csdn.net/qq_36922927/article/details/86563285 阅读：15]]></content>
+      <categories>
+        <category>版本控制</category>
+      </categories>
       <tags>
         <tag>git</tag>
-        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -72,8 +106,12 @@
     <title><![CDATA[[原]数据结构之查找]]></title>
     <url>%2F2019%2F01%2F15%2F%E5%8E%9F-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E6%9F%A5%E6%89%BE%2F</url>
     <content type="text"><![CDATA[常见查找算法顺序查找二分查找索引查找hash查找关键字:可能重复次关键字:唯一查找表:顺序查找:空间复杂度:o(1)时间复杂度:最好:o(1)最坏:o(n)平均:o(n)如果已知概率,可将大概率数据放在靠前,以减少平均查找长度折半查找:有序表:顺序表中的记录按照关键字值有序时间复杂度:log(n)以深度为h的满二叉树为例,即n=2h−1 n=2^h-1n=… 作者：qq_36922927 发表于 2019/01/15 16:03:45 原文链接 https://blog.csdn.net/qq_36922927/article/details/85942990 阅读：27]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
       <tags>
         <tag>数据结构</tag>
+        <tag>查找</tag>
       </tags>
   </entry>
   <entry>
@@ -96,26 +134,59 @@
     <title><![CDATA[[原](六) 折腾的asp.net 发布]]></title>
     <url>%2F2018%2F12%2F31%2F%E5%8E%9F-%E5%85%AD-%E6%8A%98%E8%85%BE%E7%9A%84asp-net-%E5%8F%91%E5%B8%83%2F</url>
     <content type="text"><![CDATA[1,iis需要配置:开启windows功能,所有关于.net ,asp的windows 默认是没有安装iis的,但是可以通过开启windows功能,使用iis2,虚拟目录权限需要配置配置为 Authenticated Users ,NETWORK SERVICE3,Web.config 连接字符串需要修改比如开发时本地是这样的: &amp;amp;amp;amp;amp;amp;amp;amp;amp;lt;add name=&amp;amp;amp;amp;amp;amp 作者：qq_36922927 发表于 2018/12/31 20:49:01 原文链接 https://blog.csdn.net/qq_36922927/article/details/85456777 阅读：22]]></content>
+      <categories>
+        <category>ASP.net</category>
+      </categories>
+      <tags>
+        <tag>.net</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原](四).net ajax异步刷新]]></title>
     <url>%2F2018%2F12%2F30%2F%E5%8E%9F-%E5%9B%9B-net-ajax%E5%BC%82%E6%AD%A5%E5%88%B7%E6%96%B0%2F</url>
     <content type="text"><![CDATA[ajax=Asynchronous Javascript And XmlHttpRequest(XHR)ajax是对通用标准的封装。AJAX关键技术： 1，使用XHTML(HTML)和css构建标准的显示层2，使用DOM（document object model）进行动态显示和交互3，使用XML和XLST进行数据交换和操纵4，使用XMLHttpRequest异步获取数据5，使用ja… 作者：qq_36922927 发表于 2018/12/30 10:42:58 原文链接 https://blog.csdn.net/qq_36922927/article/details/84982284 阅读：30]]></content>
+      <categories>
+        <category>ASP.net</category>
+      </categories>
+      <tags>
+        <tag>.net</tag>
+        <tag>ajax</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]卸载小乌龟报错 invalid,提示&quot; 无法使用此安装源&quot;]]></title>
     <url>%2F2018%2F12%2F27%2F%E5%8E%9F-%E5%8D%B8%E8%BD%BD%E5%B0%8F%E4%B9%8C%E9%BE%9F%E6%8A%A5%E9%94%99-invalid-%E6%8F%90%E7%A4%BA-quot-%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E6%AD%A4%E5%AE%89%E8%A3%85%E6%BA%90-quot%2F</url>
     <content type="text"><![CDATA[svn 无法卸载:由于挪动了安装包位置或者是修改了安装包名字,卸载时需要选择安装程序,就会提示安装程序名invalid,提示&amp;quot; 无法使用此安装源&amp;quot;更可气的是,卸载不了,也修复不了,而且代码也不能同步等操作解决:将安装程序名字更改为提示所要求的名字,如果只是挪动了安装程序位置,找到该位置的安装程序即可.如果安装包被删除了,去小乌龟官网下载对应版本即可 … 作者：qq_36922927 发表于 2018/12/27 23:34:32 原文链接 https://blog.csdn.net/qq_36922927/article/details/85315720 阅读：19]]></content>
+      <categories>
+        <category>版本控制</category>
+        <category>svn</category>
+      </categories>
+      <tags>
+        <tag>svn</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]svn提交代码出现 no lock token available]]></title>
     <url>%2F2018%2F12%2F27%2F%E5%8E%9F-svn%E6%8F%90%E4%BA%A4%E4%BB%A3%E7%A0%81%E5%87%BA%E7%8E%B0-no-lock-token-available%2F</url>
     <content type="text"><![CDATA[svn 提交报错:no lock token available如果是自己给锁定了,需要释放 如果是别人锁定了,让别人释放,我这个就比较厉害了,自己锁定,而且还不能释放!!!提交报如下错误 正确操作:在svn 中浏览仓库,定位到被锁定的文件右键-&amp;amp;gt;break lock,然后再提交就没问题了. … 作者：qq_36922927 发表于 2018/12/27 17:40:11 原文链接 https://blog.csdn.net/qq_36922927/article/details/85294490 阅读：62]]></content>
+      <categories>
+        <category>版本控制</category>
+      </categories>
+      <tags>
+        <tag>svn</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]HTTP Status 500 - Could not write content]]></title>
     <url>%2F2018%2F12%2F20%2F%E5%8E%9F-HTTP-Status-500-Could-not-write-content%2F</url>
     <content type="text"><![CDATA[后台查询数据向前端返回数据时报错：HTTP Status 500 - Could not write content**1，原因：执行对应的sql发现有一个字段查出来时是null的，而封装到某个对象中时，并未给属性是否为null，检测，如果为null就赋予一个符合该属性类型的值，即可。 if (!Objects.isNull(row[8])) { tem… 作者：qq_36922927 发表于 2018/12/20 08:52:19 原文链接 https://blog.csdn.net/qq_36922927/article/details/85111328 阅读：50]]></content>
+      <categories>
+        <category>java后端</category>
+      </categories>
+      <tags>
+        <tag>500</tag>
+        <tag>基本数据类型包装类</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[HTTP Status 500 - Could not write content***]]></title>
@@ -149,6 +220,13 @@
     <title><![CDATA[[原]rabbitMQ的简单使用]]></title>
     <url>%2F2018%2F12%2F12%2F%E5%8E%9F-rabbitMQ%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[文章目录direct模式：直来直往，指哪到哪儿配置：生产者：消费者：特点：交换机模式：交换机模式1：topic模式，配置：生产者：消费者：过程：交换机模式2Fanout模式：配置：生产者：消费者：特点：交换机模式3：Headers模式，配置：生产者：消费者：特点：总结：生产者：制造消息消费者：获取消息，处理消息路由机制：中转消息四种模式：后三种是交换机模式Direct：不需要交换机，直… 作者：qq_36922927 发表于 2018/12/12 21:10:51 原文链接 https://blog.csdn.net/qq_36922927/article/details/84979496 阅读：26]]></content>
+      <categories>
+        <category>消息中间件</category>
+      </categories>
+      <tags>
+        <tag>rabbitMQ</tag>
+        <tag>消息队列</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[[原]double check机制真的是完美的吗？]]></title>
